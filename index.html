@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet">
+    <title>Pizzeria</title>
+</head>
+<body class="scroll-smooth">
+    
+    <header class="absolute w-full z-50">
+        <nav class="bg-transparent">
+            <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl lg:px-6 py-4">
+                <a href="./index.html" class="flex items-center cursor-pointer pl-4">
+                    <img src="./public/pizza.png" class="mr-3 h-9" alt="Pizzeria Logo" />
+                    <span class="self-center text-xl font-semibold whitespace-nowrap text-white">Pizzeria</span>
+                </a>
+                <div class="flex items-center lg:order-2">
+                    <button data-collapse-toggle="mobile-menu-2" type="button" class="inline-flex items-center p-2 ml-1 text-sm text-white rounded-lg lg:hidden focus:outline-none cursor-pointer focus:ring-gray-200" aria-controls="mobile-menu-2" aria-expanded="false">
+                        <span class="sr-only">Apri menu principale</span>
+                        <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+                        <svg class="hidden w-6 h-6" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                    </button>
+                </div>
+                <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 text-xl text-white" id="mobile-menu-2">
+                    <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
+                        <li>
+                            <a href="#chiSiamo" class="block py-2 pr-4 pl-3  border-b border-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Chi siamo</a>
+                        </li>
+                        <li>
+                            <a href="#servizi" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Servizi</a>
+                        </li>
+                        <li>
+                          <a href="#gallery" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Gallery</a>
+                      </li>
+                        <li>
+                            <a href="#contatti" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Contatti</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </header>
+      
+      <!-- Esempio di hero section per mostrare la navbar trasparente -->
+      <section class="relative h-screen w-full bg-cover bg-center" style="background-image: url('https://www.pizzeriacelsius.com/wp-content/uploads/2024/07/pizzeria.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative flex h-full flex-col items-center justify-center px-4 text-center text-white">
+          <h1 class="mb-2 text-4xl font-bold md:text-5xl lg:text-6xl">La Migliore Pizza in Città</h1>
+          <p class="mb-8 max-w-md text-lg md:text-xl">Ingredienti freschi e ricette tradizionali per un'esperienza autentica.</p>
+          <a href="#contatti" class="rounded-lg bg-yellow-500 px-6 py-3 font-semibold text-gray-900 transition-all hover:bg-yellow-400 focus:outline-none focus:ring-2 cursor-pointer focus:ring-yellow-300 focus:ring-offset-2">
+            Ordina Ora
+          </a>
+        </div>
+      </section>
+
+      <section id="chiSiamo" class="bg-white dark:bg-gray-900">
+        <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
+            <div class="font-ligth sm:text-lg ">
+                <h2 class="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">I re della pizza</h2>
+                <p class="mb-4">Benvenuti alla Pizzeria [Nome], dove tradizione e passione si incontrano per offrirvi il gusto autentico della vera pizza italiana. Ingredienti freschi, impasti lievitati naturalmente e una cottura perfetta nel forno a legna:</p>
+                <p>ogni pizza è un’esperienza da vivere. Vieni a trovarci e scopri il sapore della qualità!</p>
+            </div>
+            <div class="grid  grid-cols-2 gap-4 mt-8">
+                <img class="w-full rounded-lg" src="https://images.unsplash.com/photo-1606152196365-d1ce5ea838b5?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 1">
+                <img class="mt-4 w-full lg:mt-10 rounded-lg" src="https://images.unsplash.com/photo-1593560708920-61dd98c46a4e?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="office content 2">
+            </div>
+        </div>
+    </section>
+
+    <div id="servizi" class="bg-gray-50 py-16 sm:py-24">
+      <div class="mx-auto max-w-7xl px-6 lg:px-8">
+        <div class="mb-12 text-center">
+          <h2 class="text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl">
+            Le nostre offerte
+          </h2>
+          <p class="mt-4 text-lg text-gray-600">
+            Scopri tutto ciò che il nostro locale ha da offrirti
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 gap-8 lg:grid-cols-3">
+          <!-- Ristorante -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div class="relative h-64 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1537047902294-62a40c20a6ae?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Ristorante"
+                class="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            </div>
+            
+            <div class="p-6 bg-white">
+              <div class="flex items-center mb-4">
+                <div class="p-2 rounded-full bg-red-50 text-red-600 mr-4">
+                  <!-- Utensils icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.325 14.322c1.984-.58 4.36-2.12 4.36-7.622 0-1.967-.67-3-2.342-3-1.509 0-2.925 1.444-2.868 3.59L12.44 7.376c.057-2.146-1.36-3.59-2.868-3.59-1.673 0-2.342 1.033-2.342 3 0 5.502 2.376 7.042 4.36 7.622m.67.193L12 21l-.26-6.81z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900">Ristorante</h3>
+              </div>
+              <p class="text-gray-600">Gusta le nostre specialità in un ambiente accogliente e raffinato</p>
+            </div>
+          </div>
+  
+          <!-- Pizzeria -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div class="relative h-64 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1569230516306-5a8cb5586399?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Pizzeria"
+                class="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            </div>
+            
+            <div class="p-6 bg-white">
+              <div class="flex items-center mb-4">
+                <div class="p-2 rounded-full bg-red-50 text-red-600 mr-4">
+                  <!-- Pizza icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm3.707 13.293a1 1 0 11-1.414 1.414 1 1 0 011.414-1.414zM8.293 15.293a1 1 0 11-1.414 1.414 1 1 0 011.414-1.414zM11 10a1 1 0 11-2 0 1 1 0 012 0zm3.5-1a1 1 0 110 2 1 1 0 010-2z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900">Pizzeria</h3>
+              </div>
+              <p class="text-gray-600">Pizze artigianali cotte in forno a legna con ingredienti di prima qualità</p>
+            </div>
+          </div>
+  
+          <!-- Asporto -->
+          <div class="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
+            <div class="relative h-64 w-full overflow-hidden">
+              <img 
+                src="https://images.unsplash.com/photo-1634055789731-c73fbbe3e0dc?q=80&w=2019&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" 
+                alt="Asporto"
+                class="h-full w-full object-cover transition-transform duration-500 ease-in-out group-hover:scale-105"
+              />
+              <div class="absolute inset-0 bg-black opacity-0 transition-opacity duration-300 group-hover:opacity-5"></div>
+            </div>
+            
+            <div class="p-6 bg-white">
+              <div class="flex items-center mb-4">
+                <div class="p-2 rounded-full bg-red-50 text-red-600 mr-4">
+                  <!-- Shopping Bag icon -->
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z" />
+                  </svg>
+                </div>
+                <h3 class="text-2xl font-semibold text-gray-900">Asporto</h3>
+              </div>
+              <p class="text-gray-600">I tuoi piatti preferiti comodamente a casa tua</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="gallery" class="max-w-7xl mx-auto px-5 py-16 sm:py-24">
+      <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Galleria Fotografica</h1>
+      
+      <!-- Galleria a griglia -->
+      <div class="grid grid-cols-1 sm:grid-cols-2  lg:grid-cols-4 gap-4">
+          <!-- Immagini della galleria con i tuoi URL -->
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1489564239502-7a532064e1c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Forno a legna" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1682264788192-9abdec90c425?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1608562099373-69dd6b715cd9?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1499778003268-cbafc6d08bab?q=80&w=2069&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <!-- Ripeto alcune immagini per riempire la griglia -->
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1489564239502-7a532064e1c2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Forno a legna" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1682264788192-9abdec90c425?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+          <div class="overflow-hidden rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img src="https://images.unsplash.com/photo-1600628421055-4d30de868b8f?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0" alt="Immagine" class="w-full h-64 object-cover hover:scale-105 transition-transform duration-300">
+          </div>
+      </div>
+  </div>
+
+
+    <section id="contatti" class=" py-16 sm:py-24 bg-gray-50">
+
+      <h1 class="text-4xl font-bold text-center mb-10 text-gray-800">Info e contatti</h1>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2">
+
+      
+
+        <div class="w-full mx-auto bg-white rounded-xl shadow-lg overflow-hidden md:max-w-2xl my-8 ">
+            <div class="p-6">
+              <h2 class="text-xl font-bold text-center text-gray-800 mb-6 border-b pb-2">INFORMAZIONI DI CONTATTO</h2>
+              
+              <div class="space-y-6 ">
+                <!-- Telefono con icona più grande -->
+                <div class="flex items-center p-3 bg-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+                  <div class=" p-3 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500 ml-3">Telefono</p>
+                    <p class="text-lg font-semibold text-gray-800 ml-3">+39 123 456 7890</p>
+                  </div>
+                </div>
+                
+                <!-- Indirizzo con icona più grande -->
+                <div class="flex items-center p-3 bg-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+                  <div class=" p-3 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Indirizzo</p>
+                    <p class="text-lg font-semibold text-gray-800">Via Roma 123</p>
+                    <p class="text-gray-600">00100 Roma, Italia</p>
+                  </div>
+                </div>
+                
+                <!-- Email (aggiunto come extra) -->
+                <div class="flex items-center p-3 bg-gray-200 rounded-lg hover:bg-gray-100 transition-colors">
+                  <div class=" p-3 rounded-full mr-4">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-8 w-8 " fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                    </svg>
+                  </div>
+                  <div>
+                    <p class="text-sm text-gray-500">Email</p>
+                    <p class="text-lg font-semibold text-gray-800">info@esempio.it</p>
+                  </div>
+                </div>
+              </div>
+              
+              <!-- Pulsante o link per indicazioni stradali -->
+              <div class="mt-6 text-center">
+                <a href="https://maps.app.goo.gl/3c1dveJkn8d8RwLW9" target="_blank" class="inline-flex items-center px-4 py-2 bg-yellow-400 text-white rounded-lg hover:bg-yellow-500 transition-colors">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
+                  </svg>
+                  Indicazioni stradali
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+
+
+          <div class="w-full mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-8">
+            <div class="p-6">
+                <h2 class="text-xl font-bold text-center text-gray-800 mb-6 border-b pb-2">ORARI DI APERTURA</h2>
+              <div class="">
+                <div class="grid grid-cols-2 gap-2">
+                  <div class="text-gray-600">Lunedì - Venerdì:</div>
+                  <div class="text-gray-800 font-medium">09:00 - 18:00</div>
+                  
+                  <div class="text-gray-600">Sabato:</div>
+                  <div class="text-gray-800 font-medium">10:00 - 16:00</div>
+                  
+                  <div class="text-gray-600">Domenica:</div>
+                  <div class="text-gray-800 font-medium">Chiuso</div>
+                  
+                  <div class="text-gray-600 mt-2">Festivi:</div>
+                  <div class="text-gray-800 font-medium mt-2">Chiuso</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+    </section>
+
+    <footer class="p-4 bg-yellow-400 md:p-8 lg:p-10">
+        <div class="mx-auto max-w-screen-xl text-center">
+            <a href="./index.html" class="flex justify-center items-center text-2xl font-semibold text-gray-900 ">
+                <img src="./public/pizza.png" class="mr-3 h-9" alt="Pizzeria Logo" />
+                Pizzeria    
+            </a>
+            <p class="my-6 text-gray-500 dark:text-gray-400">Info della nostra attività</p>
+            <ul class="flex flex-col lg:flex-row flex-wrap justify-evenly lg:w-2/3 mx-auto mb-6 text-gray-900 ">
+                <li>
+                    <a href="#chiSiamo" class="hover:underline">Chi siamo</a>
+                </li>
+                <li>
+                    <a href="#servizi" class="hover:underline">Servizi</a>
+                </li>
+                <li>
+                    <a href="#contatti" class="hover:underline">Contatti</a>
+                </li>
+            </ul>
+            <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://jeud.it/" class="hover:underline">Powered by JEUD</a>. All Rights Reserved.</span>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
+</body>
+</html>
