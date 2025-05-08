@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="./output.css" rel="stylesheet">
+    <script src="script.js"></script>
+    <title>second</title>
+</head>
+<body>
+    <header id="navbar" class="fixed top-0 left-0 w-full bg-white shadow-md z-40 transition-transform duration-300">
+        <div class="container mx-auto px-4">
+          <div class="flex justify-between items-center h-16">
+            <!-- Logo -->
+            <div class="flex items-center">
+              <a href="#" class="text-xl font-bold text-gray-800">Logo</a>
+            </div>
+            
+            <!-- Menu desktop -->
+            <nav class="hidden md:flex space-x-8">
+              <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Home</a>
+              <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Chi siamo</a>
+              <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Servizi</a>
+              <a href="#" class="text-gray-600 hover:text-gray-900 font-medium">Contatti</a>
+            </nav>
+            
+            <!-- Pulsante menu mobile -->
+            <button id="menu-toggle" class="md:hidden text-gray-600 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </header>
+      
+      <!-- Overlay per la sidebar (nascosto di default) -->
+      <div id="overlay" class="fixed inset-0  bg-opacity-50 z-40 opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"></div>
+      
+      <!-- Sidebar mobile (nascosta di default) -->
+      <div id="sidebar" class="fixed inset-y-0 right-0 w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 md:hidden">
+        <div class="flex justify-between items-center p-4 border-b">
+          <span class="text-xl font-bold text-gray-800">Menu</span>
+          <button id="close-sidebar" class="text-gray-600 focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+        <nav class="p-4">
+          <ul class="space-y-4">
+            <li><a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Home</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Chi siamo</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Servizi</a></li>
+            <li><a href="#" class="block py-2 px-4 text-gray-600 hover:bg-gray-100 rounded-md">Contatti</a></li>
+          </ul>
+        </nav>
+      </div>
+      
+      <!-- Contenuto della pagina -->
+      <main class="pt-20 px-4">
+        <div class="container mx-auto">
+          <h1 class="text-3xl font-bold mb-6">Contenuto della pagina</h1>
+          
+          <!-- Contenuto fittizio per permettere lo scroll -->
+          <div class="space-y-8">
+            <p class="text-lg">Scrolla verso il basso per vedere la navbar scomparire, poi scrolla verso l'alto per vederla riapparire.</p>
+            <p class="text-lg">Su mobile, clicca sull'icona del menu per aprire la sidebar.</p>
+            
+            <!-- Generiamo paragrafi per avere abbastanza contenuto da scrollare -->
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Sezione 1</h2>
+              <p class="mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam in dui mauris. Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim.</p>
+              <p>Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus. Mauris iaculis porttitor posuere. Praesent id metus massa, ut blandit odio.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Sezione 2</h2>
+              <p class="mb-4">Proin elit arcu, rutrum commodo, vehicula tempus, commodo a, risus. Curabitur nec arcu. Donec sollicitudin mi sit amet mauris. Nam elementum quam ullamcorper ante.</p>
+              <p>Etiam aliquet massa et lorem. Mauris dapibus lacus auctor risus. Aenean tempor ullamcorper leo. Vivamus sed magna quis ligula eleifend adipiscing.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Sezione 3</h2>
+              <p class="mb-4">Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales.</p>
+              <p>Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo.</p>
+            </div>
+            
+            <div class="bg-white p-6 rounded-lg shadow-md">
+              <h2 class="text-xl font-semibold mb-4">Sezione 4</h2>
+              <p class="mb-4">Fusce convallis, mauris imperdiet gravida bibendum, nisl turpis suscipit mauris, sed placerat ipsum urna sed risus. In convallis tellus a mauris. Curabitur non elit ut libero tristique sodales.</p>
+              <p>Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo.</p>
+            </div>
+          </div>
+        </div>
+      </main>
+</body>
+</html>

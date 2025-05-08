@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link href="./output.css" rel="stylesheet">
+    <script src="script.js"></script>
     <title>Pizzeria</title>
 </head>
-<body class="scroll-smooth">
+<body>
     
-    <header class="absolute w-full z-50">
-        <nav class="bg-transparent">
+    <header class="absolute w-full z-50" id="navbar">
+        <nav class="bg-black">
             <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl lg:px-6 py-4">
                 <a href="./index.html" class="flex items-center cursor-pointer pl-4">
                     <img src="./public/pizza.png" class="mr-3 h-9" alt="Pizzeria Logo" />
@@ -26,22 +29,24 @@
                 <div class="hidden justify-between items-center w-full lg:flex lg:w-auto lg:order-1 text-xl text-white" id="mobile-menu-2">
                     <ul class="flex flex-col font-medium lg:flex-row lg:space-x-8 lg:mt-0">
                         <li>
-                            <a href="#chiSiamo" class="block py-2 pr-4 pl-3  border-b border-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Chi siamo</a>
+                            <a href="#chiSiamo" class="navLink block py-2 pr-4 pl-3  border-b border-gray-100 lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Chi siamo</a>
                         </li>
                         <li>
-                            <a href="#servizi" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Servizi</a>
+                            <a href="#servizi" class="navLink block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Servizi</a>
                         </li>
                         <li>
-                          <a href="#gallery" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Gallery</a>
+                          <a href="#gallery" class="navLink block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Gallery</a>
                       </li>
                         <li>
-                            <a href="#contatti" class="block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Contatti</a>
+                            <a href="#contatti" class="navLink block py-2 pr-4 pl-3  border-b border-gray-100  lg:hover:bg-transparent lg:border-0 lg:hover:text-gray-300 lg:p-0">Contatti</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
       </header>
+
+
       
       <!-- Esempio di hero section per mostrare la navbar trasparente -->
       <section class="relative h-screen w-full bg-cover bg-center" style="background-image: url('https://www.pizzeriacelsius.com/wp-content/uploads/2024/07/pizzeria.jpg');">
@@ -54,6 +59,46 @@
           </a>
         </div>
       </section>
+
+
+      <div class="carousel w-full">
+        <div id="slide1" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide4" class="btn btn-circle">❮</a>
+            <a href="#slide2" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide2" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1609621838510-5ad474b7d25d.webp"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide1" class="btn btn-circle">❮</a>
+            <a href="#slide3" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide3" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1414694762283-acccc27bca85.webp"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide2" class="btn btn-circle">❮</a>
+            <a href="#slide4" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+        <div id="slide4" class="carousel-item relative w-full">
+          <img
+            src="https://img.daisyui.com/images/stock/photo-1665553365602-b2fb8e5d1707.webp"
+            class="w-full" />
+          <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+            <a href="#slide3" class="btn btn-circle">❮</a>
+            <a href="#slide1" class="btn btn-circle">❯</a>
+          </div>
+        </div>
+      </div>
 
       <section id="chiSiamo" class="bg-white dark:bg-gray-900">
         <div class="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
@@ -105,6 +150,8 @@
               <p class="text-gray-600">Gusta le nostre specialità in un ambiente accogliente e raffinato</p>
             </div>
           </div>
+
+          
   
           <!-- Pizzeria -->
           <div class="group relative overflow-hidden rounded-lg shadow-lg transition-all duration-300 hover:shadow-xl">
@@ -154,6 +201,47 @@
               </div>
               <p class="text-gray-600">I tuoi piatti preferiti comodamente a casa tua</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="max-w-md mx-auto bg-white rounded-xl shadow-md overflow-hidden md:max-w-2xl my-8">
+      <div class="p-4">
+        
+        <div class="carousel-container rounded-lg">
+          <div class="carousel-track">
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1480714378408-67cf0d13bc1b" alt="Foto 1" class="w-full h-64 object-cover">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131" alt="Foto 2" class="w-full h-64 object-cover">
+            </div>
+            <div class="carousel-slide">
+              <img src="https://images.unsplash.com/photo-1523275335684-37898b6baf30" alt="Foto 3" class="w-full h-64 object-cover">
+            </div>
+          </div>
+          
+          <div class="flex justify-between absolute top-1/2 transform -translate-y-1/2 w-full px-4">
+            <button id="prevBtn" class="bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+              </svg>
+            </button>
+            <button id="nextBtn" class="bg-white bg-opacity-50 hover:bg-opacity-75 rounded-full p-2 focus:outline-none">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-800" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </button>
+          </div>
+        </div>
+        
+        <div class="flex justify-center mt-4">
+          <div id="dots" class="flex space-x-2">
+            <button class="w-3 h-3 rounded-full bg-yellow-500" data-index="0"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-300" data-index="1"></button>
+            <button class="w-3 h-3 rounded-full bg-gray-300" data-index="2"></button>
           </div>
         </div>
       </div>
@@ -310,6 +398,32 @@
             <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2025 <a href="https://jeud.it/" class="hover:underline">Powered by JEUD</a>. All Rights Reserved.</span>
         </div>
       </footer>
+
+      <style>
+        
+      </style>
+
+    
+      <div class="w-full max-w-md py-4 bg-white rounded-2xl shadow-lg text-center mx-auto">
+        <div id="review" class="fade fade-in">
+          <img id="review-img" src="./public/pizza.png" alt="Foto" class="mx-auto mb-4 w-36 h-36 ">
+          <p id="review-text" class="text-gray-700 mb-4 text-xl">Questa è una recensione di esempio.</p>
+        </div>
+    
+        <div class="flex justify-evenly mt-2">
+          <button id="prevReview" class="text-4xl px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer select-none">
+            <img src="./public/arrowB.png" alt="" class="w-14 h-auto">
+          </button>
+          <button id="nextReview" class="text-4xl px-4 py-2 text-blue-600 hover:text-blue-800 cursor-pointer select-none">
+            <img src="./public/arrowF.png" alt="" class="w-14 h-auto">
+          </button>
+        </div>
+      </div>
+    
+        
+       
+
+      
 
 
     <script src="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.js"></script>
